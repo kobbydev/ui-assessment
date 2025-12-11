@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "PushPenny";
+  src: url("../fonts/PushPenny-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PushPenny";
+  src: url("../fonts/PushPenny-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PushPenny";
+  src: url("../fonts/PushPenny-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PushPenny";
+  src: url("../fonts/PushPenny-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PushPenny";
+  src: url("../fonts/PushPenny-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --color-grayish-blue: #f8f9fe;
+  --color-greyish-blue: #6e80a3;
+  --color-dark-blue: #233375;
+  --color-deep-blue: #0d2c65;
+  --color-bright-blue: #2668ec;
+  --color-lime-green: #23ce6b;
+  --color-gray-400: #f3f3f3;
+  --color-gray-700: #d1d1d1;
+  --color-gray-900: #6f6f6f;
+  --color-neon-blue: #6d48ff;
+  --color-blue-green: #04ce9d;
+  --color-orange: #ef845c;
+  --font-family-sans: "PushPenny", ui-sans-serif, system-ui, sans-serif;
+}
+
+* {
+  font-family: "PushPenny", ui-sans-serif, system-ui, sans-serif;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    #9ca3af 0%,
+    #9ca3af 25%,
+    rgba(255, 255, 255, 0.4) 50%,
+    #9ca3af 75%,
+    #9ca3af 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}

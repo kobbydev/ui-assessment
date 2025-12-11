@@ -1,0 +1,52 @@
+[
+  {
+    "name": "United States",
+    "code": "US",
+    "flag": "https://flagcdn.com/us.svg",
+    "currency": {
+      "code": "USD",
+      "symbol": "$",
+      "name": "United States dollar"
+    }
+  },
+  {
+    "name": "United Kingdom",
+    "code": "GB",
+    "flag": "https://flagcdn.com/gb.svg",
+    "currency": {
+      "code": "GBP",
+      "symbol": "£",
+      "name": "British pound"
+    }
+  },
+  {
+    "name": "Nigeria",
+    "code": "NG",
+    "flag": "https://flagcdn.com/ng.svg",
+    "currency": {
+      "code": "NGN",
+      "symbol": "₦",
+      "name": "Nigerian naira"
+    }
+  },
+  {
+    "name": "Ghana",
+    "code": "GH",
+    "flag": "https://flagcdn.com/gh.svg",
+    "currency": {
+      "code": "GHS",
+      "symbol": "₵",
+      "name": "Ghanaian cedi"
+    }
+  },
+  {
+    "name": "Germany",
+    "code": "DE",
+    "flag": "https://flagcdn.com/de.svg",
+    "currency": {
+      "code": "EUR",
+      "symbol": "€",
+      "name": "Euro"
+    }
+  }
+]

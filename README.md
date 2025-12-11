@@ -1,63 +1,75 @@
-# UI Assessment
+# Nuxt Minimal Starter
 
-# Design file
-https://www.figma.com/file/fO9SrIq6PCQSoJ8iqT0A3O/Sample-UI?node-id=1%3A2
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-# Assets
-- [Icons](./assets/icons)
-- [Images](./assets/images)
+## Setup
 
-### Font
-[Montserrat](https://fonts.google.com/specimen/Montserrat?query=mont)
+Make sure to install dependencies:
 
-# API
-Docs: https://camiestas-futbol.effectstudios.co/api/docs <br>
-Base URL: https://camiestas-futbol.effectstudios.co/api
+```bash
+# npm
+npm install
 
-#### Banners
-```shell
-GET https://camiestas-futbol.effectstudios.co/api/v1/banner
-```
-#### Popular products
-```shell
-GET https://camiestas-futbol.effectstudios.co/api/v1/popular-products
-```
-#### Product collections/categories
-Slugs for `Country Leagues` and `Other Collections` can be found in the results returned from this endpoint
-```shell
-GET https://camiestas-futbol.effectstudios.co/api/v1/product-category
-```
-#### Single collection/category
-```shell
-GET https://camiestas-futbol.effectstudios.co/api/v1/product-category-slug/{slug}
-```
-#### Single product details/information
-```shell
-GET https://camiestas-futbol.effectstudios.co/api/v1/product-single/{slug}
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
 ```
 
-# Objectives
-- Build the UI to match the design as closely as possible.
-- Integrate the UI with the backend using the API provided above.
-- Animations/Micro-interactions are not required but would be a plus.
+## Development Server
 
-# Requirements
-### Programming Language
-- Typescript
-  
-### Web Framework (Any of)
-- [Nextjs](https://nextjs.org/)
-- [Nuxt 3](https://v3.nuxtjs.org/)
+Start the development server on `http://localhost:3000`:
 
-### UI library (Any of) 
-- [TailwindCSS](https://tailwindcss.com/)
-- Vanilla CSS or SCSS
+```bash
+# npm
+npm run dev
 
-# Deadline
-72hrs after you've accepted the invitation to the Figma file.
+# pnpm
+pnpm dev
 
-If you have any questions, do leave them in the discussions panel and mention @pyplacca in it. You can also send an email to the correspondent.
+# yarn
+yarn dev
 
-# Submission Instructions
-1. Create a deployment link.
-2. [E-mail](mailto:david@effectstudios.co?subject=Submission:%20Frontend%20Developer%20Assessment) the links of the deployment and Github repository.
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
