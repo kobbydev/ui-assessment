@@ -12,7 +12,7 @@ defineProps<{
 
 <template>
   <div
-    class="text-white px-9 pt-[63px] md:pt-[100px] md:px-[55px] rounded-lg relative h-max max-h-[800px] min-h-[700px]"
+    class="text-white px-9 pt-[63px] md:pt-[100px] md:px-[55px] rounded-lg relative max-h-[800px] min-h-[700px] overflow-hidden"
     :style="{ backgroundColor: bgColor ? `${bgColor}1a` : '#04ce9d1a' }"
   >
     <div v-if="comingSoon">
@@ -44,7 +44,7 @@ defineProps<{
       <img
         :src="`/images/${image}.svg`"
         :alt="`${image} service`"
-        class="object-contain h-full"
+        class="object-contain"
       />
     </div>
   </div>

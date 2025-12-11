@@ -79,10 +79,10 @@ const rightColumnServices = computed(() =>
     </div>
 
     <!-- Desktop: 2-column (left-to-right order) -->
-    <div class="mt-12 hidden lg:grid grid-cols-2 gap-[60px] items-stretch">
-      <div class="flex h-full flex-col justify-between gap-[60px]">
+    <div class="mt-12 hidden lg:grid grid-cols-2 gap-[60px] items-start">
+      <div class="flex h-full flex-col gap-[60px]">
         <UiServiceCard
-          v-for="service in leftColumnServices"
+          v-for="(service, index) in leftColumnServices"
           :key="service.title"
           :title="service.title"
           :subtitle="service.subtitle"
@@ -91,11 +91,12 @@ const rightColumnServices = computed(() =>
           :buttonText="service.buttonText"
           :bgColor="service.bgColor"
           :comingSoon="service.comingSoon"
+          :class="index === 0 ? 'h-[700px]' : 'h-[800px]'"
         />
       </div>
-      <div class="flex h-full flex-col justify-between gap-[60px]">
+      <div class="flex h-full flex-col gap-[60px]">
         <UiServiceCard
-          v-for="service in rightColumnServices"
+          v-for="(service, index) in rightColumnServices"
           :key="service.title"
           :title="service.title"
           :subtitle="service.subtitle"
@@ -104,6 +105,7 @@ const rightColumnServices = computed(() =>
           :buttonText="service.buttonText"
           :bgColor="service.bgColor"
           :comingSoon="service.comingSoon"
+          :class="index === 0 ? 'h-[800px]' : 'h-[700px]'"
         />
       </div>
     </div>
