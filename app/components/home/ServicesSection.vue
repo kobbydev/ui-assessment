@@ -35,6 +35,7 @@ const services = [
     image: "connect",
     buttonText: "Explore now",
     bgColor: "#ef845c",
+    comingSoon: true,
   },
 ];
 
@@ -73,12 +74,13 @@ const rightColumnServices = computed(() =>
         :image="service.image"
         :buttonText="service.buttonText"
         :bgColor="service.bgColor"
+        :comingSoon="service.comingSoon"
       />
     </div>
 
-    <!-- Desktop: 2-column masonry (left-to-right order) -->
-    <div class="mt-12 hidden lg:grid grid-cols-2 gap-[60px] items-start">
-      <div class="flex flex-col gap-[60px]">
+    <!-- Desktop: 2-column (left-to-right order) -->
+    <div class="mt-12 hidden lg:grid grid-cols-2 gap-[60px] items-stretch">
+      <div class="flex h-full flex-col justify-between gap-[60px]">
         <UiServiceCard
           v-for="service in leftColumnServices"
           :key="service.title"
@@ -88,9 +90,10 @@ const rightColumnServices = computed(() =>
           :image="service.image"
           :buttonText="service.buttonText"
           :bgColor="service.bgColor"
+          :comingSoon="service.comingSoon"
         />
       </div>
-      <div class="flex flex-col gap-[60px]">
+      <div class="flex h-full flex-col justify-between gap-[60px]">
         <UiServiceCard
           v-for="service in rightColumnServices"
           :key="service.title"
@@ -100,6 +103,7 @@ const rightColumnServices = computed(() =>
           :image="service.image"
           :buttonText="service.buttonText"
           :bgColor="service.bgColor"
+          :comingSoon="service.comingSoon"
         />
       </div>
     </div>

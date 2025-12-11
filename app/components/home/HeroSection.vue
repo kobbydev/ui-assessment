@@ -147,7 +147,7 @@ onUnmounted(() => {
             <img
               src="../../assets/images/desktop-hero.svg"
               :alt="`hero image ${index + 1}`"
-              class="w-[298px] h-[725px] mx-auto hidden lg:block"
+              class="w-[298px] h-[668px] mx-auto hidden lg:block 2xl:mt-20"
             />
 
             <div
