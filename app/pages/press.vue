@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useHead({
+  title: "Press",
+});
+
 const pressCards = [
   {
     title: "Combining AI, fintech to solve African problems – Ericsson",
@@ -45,7 +49,9 @@ const pressCards = [
   <div>
     <Header />
     <PressHeroSection />
-    <div class="mt-[125px] px-8 lg:px-[138px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-11 lg:gap-0">
+    <div
+      class="mt-[125px] px-8 lg:px-[138px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-11 lg:gap-0"
+    >
       <UiPressCard v-for="card in pressCards" :key="card.title" v-bind="card" />
     </div>
   </div>

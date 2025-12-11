@@ -86,26 +86,28 @@ onMounted(async () => {
         class="block lg:hidden"
       />
       <div>
-        <p class="text-gray-900 text-[10px] md:text-sm flex items-center gap-2">
+        <div
+          class="text-gray-900 text-[10px] md:text-sm flex items-center gap-2"
+        >
           {{ fee.toFixed(2) }}
 
           {{ sendCurrency }}
           <span
             class="lg:hidden flex gap-2 items-center py-[6px] px-4 bg-gray-400 rounded-[2px]"
           >
-            <p>Express</p>
+            <span>Express</span>
             <img
               src="../../assets/icons/chevron-down.svg"
               alt="chevron down icon"
             />
           </span>
           Fee
-        </p>
+        </div>
       </div>
     </div>
     <UiCurrencyInput
       label="Receiver gets"
-      labelFor="send-amount"
+      labelFor="receive-amount"
       v-model="receiveAmount"
       :currency="receiveCurrency"
       :loading="isLoadingReceiveCurrency"
